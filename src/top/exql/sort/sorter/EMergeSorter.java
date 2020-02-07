@@ -7,12 +7,14 @@ import java.util.Arrays;
  * @Author: exqlnet
  * @CreateTime: 2020-02-07 10:58
  * @Description: 归并排序
+ * 整个过程类似于一棵树，每一层的T(n) = n，共log2(n)层
+ * 时间复杂度：O(nlog2(n))
+ * 空间复杂度：O(n)
  */
 public class EMergeSorter implements ESorter{
     @Override
     public int[] sort(int[] nums) {
         int[] tmp = new int[nums.length];
-        int a, b;
         int[] newNums = new int[nums.length];
         System.arraycopy(nums, 0, newNums, 0, nums.length);
 

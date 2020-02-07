@@ -8,8 +8,9 @@ import java.util.Arrays;
  * @CreateTime: 2020-02-06 19:18
  * @Description: 插入排序
  * * 时间复杂度：O(n^2)
- * * 最优情况（逆序数为0）：n
+ * * 最优情况（逆序数为0）：O(n)
  * * 最差情况（逆序数为n）：n(n-1)/2 = 1 + 2 + 3 + 4 + ... + n - 1
+ * * 空间复杂度：O(1)
  */
 public class EInsertSorter implements ESorter{
 

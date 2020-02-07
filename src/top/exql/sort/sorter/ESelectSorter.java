@@ -1,8 +1,14 @@
 package top.exql.sort.sorter;
 
-import top.exql.sort.sorter.ESorter;
-
-import java.util.Arrays;
+/**
+ * @BelongsProject: awesome-sort
+ * @Author: exqlnet
+ * @CreateTime: 2020-02-06 20:10
+ * @Description: 选择排序
+ *
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：O(1)
+ */
 
 public class ESelectSorter implements ESorter {
 

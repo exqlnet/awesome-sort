@@ -1,5 +1,14 @@
 package top.exql.sort.sorter;
 
+/**
+ * @BelongsProject: awesome-sort
+ * @Author: exqlnet
+ * @CreateTime: 2020-02-07 11:52
+ * @Description: 冒泡排序
+ *
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：O(1)
+ */
 
 public class EBubbleSorter implements ESorter {
 

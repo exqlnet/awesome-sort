@@ -1,19 +1,19 @@
 package top.exql.sort.sorter;
 
-import java.util.Random;
-
 /**
  * @BelongsProject: awesome-sort
  * @Author: exqlnet
  * @CreateTime: 2020-02-06 20:10
- * @Description: 快速排序 递归法
+ * @Description: 快速排序
+ *
+ * 时间复杂度：O(n2log2(n))
+ * 最差情况：O(n^2)  每次随机选择的数都刚好是最值
+ * 空间复杂度：O(1)
  */
 public class EQuickSorter implements ESorter{
 
     @Override
     public int[] sort(int[] nums) {
-        int tmp;
-        int a, b;
         int[] newNums = new int[nums.length];
         System.arraycopy(nums, 0, newNums, 0, nums.length);
 

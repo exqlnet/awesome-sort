@@ -4,7 +4,10 @@ package top.exql.sort.sorter;
  * @BelongsProject: awesome-sort
  * @Author: exqlnet
  * @CreateTime: 2020-02-07 11:52
- * @Description: 桶排序
+ * @Description: 计数排序
+ *
+ * 时间复杂度：O(n) = O(n+n)
+ * 空间复杂度：O(最大值)
  */
 public class ECountSorter implements ESorter{
 
