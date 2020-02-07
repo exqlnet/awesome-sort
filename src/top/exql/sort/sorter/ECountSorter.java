@@ -13,6 +13,7 @@ public class ECountSorter implements ESorter{
 
     @Override
     public int[] sort(int[] nums) {
+
         // 找到最大值
         int max = nums[0];
         for (int num: nums) {
@@ -28,14 +29,15 @@ public class ECountSorter implements ESorter{
         int i = 0;
         int t = 0;
         int n;
+        int[] newNums = new int[nums.length];
         while (t<tmp.length) {
             n = 0;
             while (n<tmp[t]) {
-                nums[i++] = t;
+                newNums[i++] = t;
                 n++;
             }
             t++;
         }
-        return nums;
+        return newNums;
     }
 }
